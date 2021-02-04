@@ -1,0 +1,21 @@
+.footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $white;
+    @media screen and (max-device-width: 736px) and (orientation: landscape) {
+        height: 15vh;
+    }
+    @media screen and (max-device-width: 570px) and (orientation: landscape) {
+        height: 15vh;
+    }
+    .copyrights {
+        font-family: "Droid Arabic Naskh";
+        font-size: 0.6rem;
+        line-height: 1.3rem;
+        color: $darkGray;
+    }
+}

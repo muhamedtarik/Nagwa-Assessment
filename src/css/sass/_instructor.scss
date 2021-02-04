@@ -1,0 +1,89 @@
+.instructor {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    background-color: $yellow;
+    @media screen and (max-width: 767px) {
+        height: 60vh;
+        width: 100%;
+        padding: 2rem 0.5rem;
+    }
+    @media screen and (max-device-width: 736px) and (orientation: landscape) {
+        height: 100vh;
+        width: 100%;
+        padding: 2rem 0.5rem;
+    }
+    .meta {
+        width: 55%;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+        @media screen and (max-device-width: 736px) and (orientation: landscape) {
+            width: 100%;
+        }
+        @media (min-width: 998px) and (max-width: 1154px) {
+            width: 60%;
+        }
+        @media (min-width: 931px) and (max-width: 997px) {
+            width: 60%;
+        }
+        @media (min-width: 768px) and (max-width: 930px) {
+            width: 70%;
+        }
+        .instructor-image {
+            width: 7.5rem;
+            height: 7.5rem;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
+            margin-bottom: 1rem;
+            transition: all 0.5s;
+        }
+        .name {
+            font-family: "GE SS Two";
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            color: $blue;
+            text-align: center;
+        }
+        .title {
+            font-family: "GE SS Two";
+            font-size: 0.6rem;
+            line-height: 1rem;
+            color: $darkGray;
+            text-align: center;
+            display: block;
+        }
+        .about {
+            font-family: "Droid Arabic Naskh";
+            font-size: 0.6rem;
+            line-height: 1.3rem;
+            color: $darkGray;
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                display: block;
+                margin: 0.4rem;
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                    object-fit: cover;
+                    transition: all 0.3s;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+    }
+}
